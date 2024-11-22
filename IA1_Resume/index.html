@@ -9,40 +9,111 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=League+Spartan:wght@100..900&family=Trade+Winds&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
-            <div class="container-fluid">
-              <a class="navbar-brand px-lg-5" href="#">Ryu</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                  <a class="nav-link" href="#">Home</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Portfolio</a>
-                  <a class="nav-link" href="#">Contact</a>
-                </div>
+  <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
+      <div class="container-fluid pt-3">
+          <a class="navbar-brand" href="javascript:void(0);" data-target="main">Ryu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0);" data-target="main">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0);" data-target="about">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <section class="main pt-5">
+      <div class="container pt-5 mt-5">
+          <div class="row">
+              <div class="col-md-6 ps-3">
+                  <h3>Hi there, I'm</h3>
+                  <h1>John Kenneth Litana</h1>
+                  <h3>Graphic Designer</h3>
               </div>
-            </div>
-          </nav>
+              <div class="container mt-2 pt-3">
+                  <div class="d-flex align-items-center">
+                      <a href="https://www.facebook.com/haha.sinokaba.15/" target="_blank" class="me-3">
+                          <img src="icon_fb.png" class="img-fluid rounded" alt="Image 1">
+                      </a>
+                      <a href="https://www.instagram.com/_undeadlove?igsh=MWxpcjE0emtzMXZmNQ%3D%3D&utm_source=qr" target="_blank">
+                          <img src="icon_ig.png" class="img-fluid rounded" alt="Image 2">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-        <section class="main py-5">
-            <div class="container py-5">
-                <div class="row py-5">
-                    <div class="col-lg-6 py-5">
-                        <h3><small>Hello, I'm</small> <br>John Kenneth Litana</h3>
-                        <h6>Graphic Designer</h6>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section class="about">
+      <div class="container pt-5">
+          <div class="row pt-5 ps-5">
+              <div class="col-md-6">
+                  <h1>About Me!</h1>
+              </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+              <div class="col-md-6 offset-md-5 pt-5">
+                  <p>I’m John Kenneth H. Litana, a graphic designer
+                        based in Philippines with a keen eye for creativity
+                        and detail. I thrive on bringing ideas to life through
+                        compelling visuals, blending innovation with
+                        purpose. My goal is to craft designs that not only
+                        captivate but also communicate effectively. Let’s
+                        create something extraordinary together!</p>
+              </div>
+              <div class="col-md-6 offset-md-5 mt-5">
+                  <a href="Litana_CV.pdf" download>
+                    <input type="button" class="btn1 mt-5 rounded-pill" value="Download CV">
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <script>
+    document.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 760) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            const targetClass = this.getAttribute('data-target');
+            const targetSection = document.querySelector(`.${targetClass}`);
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    document.querySelector('.navbar-brand').addEventListener('click', function() {
+        const targetSection = document.querySelector('.main');
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
