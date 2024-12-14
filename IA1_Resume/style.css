@@ -54,7 +54,7 @@ body {
 }
 /* main section */
 .main {
-    background: url(img_bg.jpg)no-repeat;
+    background: url(images/img_bg.jpg)no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -71,7 +71,7 @@ body {
 }
 /* about section */
 .about {
-    background: url(img_about.png);
+    background: url(images/img_about.png);
     background-size: cover;
     width: 100%;
     height: 100vh;
