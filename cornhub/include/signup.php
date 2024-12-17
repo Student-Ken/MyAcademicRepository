@@ -1,14 +1,16 @@
 <?php
+    session_start();
     require "connection.php";
 
     if(isset($_POST['signUp'])) {
-        $firstName=$_POST['firstName'];
-        $middleName=$_POST['middleName'];
-        $lastName=$_POST['lastName'];
-        $username=$_POST['username'];
-        $email=$_POST['email'];
-        $password=$_POST['password'];
-        $confirmPassword=$_POST['confirmPassword'];
+        $firstName = $_POST['firstName'];
+        $middleName = $_POST['middleName'];
+        $lastName = $_POST['lastName'];
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $confirmPassword = $_POST['confirmPassword'];
+
         if ($password !== $confirmPassword) {
         echo "<script>
                 alert('Passwords do not match. Please try again. -,-');
@@ -34,14 +36,21 @@
 
         $sql="SELECT * FROM customer_info WHERE email='$email' and  password='$password'";
         $result=$conn->query($sql);
+        session_start();
+        $row = $result->fetch_assoc();
+        $_SESSION['user_ID'] = $row['user_ID'];
         
-        if ($result->num_rows > 0) {
-            session_start();
-            $row = $result->fetch_assoc();
-            $_SESSION['email'] = $row['email'];
-            header("Location: ../homepage.php");
+        if($row["usertype"]=="user") {	
+            header("location:../ecommerce2.php");
+        }
+        elseif($row["usertype"]=="admin") {
+            header("location:../admin.php");
+        }
+        /*if ($result->num_rows > 0) {
+            
+            header("Location: ../ecommerce2.php");
             exit();
-        } else {
+        }*/ else {
             echo "<script>
                     alert('Incorrect Email or Password. Please try again. -,-');
                     window.location.href = '../ecommerce.php'; // Redirect back to login page

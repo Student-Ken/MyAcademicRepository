@@ -1,3 +1,7 @@
+<?php
+    include("include/connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,18 +65,6 @@
                         <div class="row">
                             <div class="col d-flex justify-content-center mb-3">
                                 <button type="submit" name="logIn" class="btn2 rounded">Log In</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-3 text-center">or log in with</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-center mb-3">
-                                <a href="https://www.facebook.com/"><img src="images/facebook logo.png" alt="Facebook" class="social-icon"></a>
-                                <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AcMMx-dK5L1TFLSSmZ9AmhDXgatCx75weZjN4M1-wr8lAl94t-vGOfFXpB6KUISTwU7kAc4mA9am&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S959870174%3A1732451391262460&ddm=1"><img src="images/google logo.png" alt="Google" class="social-icon mx-5"></a>
-                                <a href="#https://account.apple.com/sign-in"><img src="images/apple logo.png" alt="Apple" class="social-icon"></a>
                             </div>
                         </div>
                         <div class="row">
@@ -144,16 +136,6 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <p class="text-3 text-center">or log in with</p>
-                                </div>
-                            </div>
-                                <div class="col d-flex justify-content-center mb-3">
-                                    <a href="https://www.facebook.com/"><img src="images/facebook logo.png" alt="Facebook" class="social-icon"></a>
-                                    <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AcMMx-dK5L1TFLSSmZ9AmhDXgatCx75weZjN4M1-wr8lAl94t-vGOfFXpB6KUISTwU7kAc4mA9am&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S959870174%3A1732451391262460&ddm=1"><img src="images/google logo.png" alt="Google" class="social-icon mx-5"></a>
-                                    <a href="#https://account.apple.com/sign-in"><img src="images/apple logo.png" alt="Apple" class="social-icon"></a>
-                                </div>
-                            <div class="row">
-                                <div class="col">
                                     <p class="text-2 text-center">By signing up, you agree to our Terms & Condition and Privacy Policy.</p>
                                 </div>
                             </div>
@@ -220,16 +202,6 @@
                                     <button type="submit" class="btn4 rounded" name="signUp">Sign Up</button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-3 text-center">or log in with</p>
-                                </div>
-                            </div>
-                                <div class="col d-flex justify-content-center mb-3">
-                                    <a href="https://www.facebook.com/"><img src="images/facebook logo.png" alt="Facebook" class="social-icon"></a>
-                                    <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AcMMx-dK5L1TFLSSmZ9AmhDXgatCx75weZjN4M1-wr8lAl94t-vGOfFXpB6KUISTwU7kAc4mA9am&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S959870174%3A1732451391262460&ddm=1"><img src="images/google logo.png" alt="Google" class="social-icon mx-5"></a>
-                                    <a href="#https://account.apple.com/sign-in"><img src="images/apple logo.png" alt="Apple" class="social-icon"></a>
-                                </div>
                             <div class="row">
                                 <div class="col">
                                     <p class="text-2 text-center">By signing up, you agree to our Terms & Condition and Privacy Policy.</p>

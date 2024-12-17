@@ -19,7 +19,7 @@ body {
 .nav-link {
     color: black;
     font-size: 21px;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 24.61px;
 }
 .nav-link:hover {
@@ -216,6 +216,81 @@ body {
     .main .image {
         margin-right: 0;
     }
+}
+main {
+    padding-top: 40px;
+    max-width: 1500px;
+    width: 95%;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .card {
+    max-width: 300px;
+    flex: 1 1 calc(33.33% - 40px);
+    text-align: center;
+    border: 1px solid;
+    margin: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+    main {
+        justify-content: center;
+    }
+    main .card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+@media (max-width: 768px) {
+    main {
+        justify-content: center;
+    }
+    main .card {
+        flex: 1 1 calc(100% - 40px);
+    }
+}
+main .card .card-image {
+    text-align: center;
+    margin-bottom: -10px;
+}
+main .card .card-image img {
+    margin-top: 14px;
+    height: 90%;
+    width: 90%;
+    text-align: center;
+    border: 1px solid black ;
+}
+main .card .card-body {
+    padding-left: 1em;
+}
+main .card .card-body .product_name {
+    text-align: left;
+    font-size: 20px;
+}
+main .card .card-body .price {
+    text-align: right;
+}
+main .card .card-body .desc {
+    text-align: center;
+    font-size: 11px;
+}
+main .card .card-body button {
+    border: none;
+    background-color: #FC703C;
+    color: white;
+    padding: 5px;
+    width: 80%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+main .card .card-body button:hover {
+    background-color: #FD4D02;
+    border: none;
+    color: white;
 }
 .footer-1 {
     background-color: #262626;

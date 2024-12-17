@@ -9,18 +9,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" data-target="">Menu</a>
+                        <a class="nav-link" href="ecommerce.php" data-target="">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" data-target="">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" data-target="">Services</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link2 p-0" href="javascript:void(0);">
-                            <i class="bi bi-search fs-5"></i>
-                        </a>
+                        <a class="nav-link" href="products2.php" data-target="">Menu</a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
                         <button class="btn ms-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#firstmodal">Log In / Sign Up</button>

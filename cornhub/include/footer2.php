@@ -1,13 +1,11 @@
-<footer class="footer-2 text-black py-4 mt-5">
+<footer class="footer-1 text-white py-4 mt-5">
     <div class="container mt-5">
         <div class="row mt-5">
-            <!-- Navigation Links -->
             <div class="col-4">
-                <h5 class="mb-3">© Cornhub</h5>
+                <h5 class="mb-3">Navigate</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
-                    <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
-                    <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                    <li class="mb-2"><a href="ecommerce2.php" class="text-white text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="products.php" class="text-white text-decoration-none">Menu</a></li>
                 </ul>
             </div>
         </div>

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <?php require_once('include/navbar.php'); ?>
+    <?php require_once('include/navbar2.php'); ?>
 
     <section class="main">
         <div class="container">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-6 d-flex flex-column">
                     <p>Corndogs so good, even Titas will ask for second.</p>
-                    <a class="btn1 rounded-pill" href="products2.php" data-target="" style="text-decoration: none;">Order Now</a>
+                    <a class="btn1 rounded-pill" href="products.php" data-target="" style="text-decoration: none;">Order Now</a>
                 </div>
             </div>
             <div class="row pt-5">
@@ -57,8 +57,7 @@
             </div>
         </div>
     </section>
-    <?php require_once('include/login_signup.php'); ?>
-    <?php require_once('include/footer.php'); ?>
+    <?php require_once('include/footer2.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
